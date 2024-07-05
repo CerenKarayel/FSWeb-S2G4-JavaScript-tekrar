@@ -40,6 +40,7 @@ function KareninAlani(kenaruzunlugu) {
   return kenaruzunlugu * kenaruzunlugu;
 }
 
+
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
 /* GÖREV 1:  
@@ -50,9 +51,10 @@ function KareninAlani(kenaruzunlugu) {
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
 
-function CemberinCevresi(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinCevresi(yaricap) {
+  return 2*pi*yaricap
 }
+
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -64,8 +66,8 @@ function CemberinCevresi(/* kodlar buraya */) {
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinAlani(yaricap,pi) {
+  return pi*(yaricap*yaricap)
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
@@ -97,13 +99,21 @@ let ucetambolunenler,
   siralisayilar,
   tekraredensayilar;
 
-// 3a çözümü
+// 3a çözümü:
+ 
 
-/* kodlar buraya */
+ 
 
 // 3b çözümü:
+{const ucetambolunenler=[];
+  sayilar.forEach(sayi => {
+    if(sayi % 3===0){
+      ucetambolunenler.push(sayi);
+    }
+  })
+  console.log(ucetambolunenler);
+}  
 
-/* kodlar buraya */
 
 // 3c çözümü:
 
